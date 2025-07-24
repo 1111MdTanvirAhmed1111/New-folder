@@ -3,8 +3,8 @@ import Container from "@/components/Reusable/Container/Container";
 import { StaggeredFade } from "@/components/Reusable/Heading/StaggeredFade";
 import PrimaryButton from "@/components/Reusable/PrimaryButton/PrimaryButton";
 import Image from "next/image";
-import { BlurIn } from './../../Reusable/Container/BlurIn';
-import { TextFade } from './../../Reusable/Container/TextFade';
+import { BlurIn } from '@/components/Reusable/Container/BlurIn';
+import { TextFade } from '@/components/Reusable/Container/TextFade';
 
 const Hero = () => {
   return (

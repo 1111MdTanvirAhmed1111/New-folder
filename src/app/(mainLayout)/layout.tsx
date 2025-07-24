@@ -2,7 +2,7 @@
 import Footer from "@/components/Shared/Footer/Footer";
 import Navbar from "@/components/Shared/Navbar/Navbar";
 import SmoothScroll from "@/components/SmoothScroll";
-import TopLeftImage from './../../components/HomePage/TopEffects/TopLeftImage';
+import TopLeftImage from '@/components/HomePage/TopEffects/TopLeftImage';
 
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {

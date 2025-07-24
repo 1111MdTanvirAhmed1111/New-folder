@@ -29,18 +29,24 @@ function TopLeftImage() {
   }, []);
 
   return (
-    <div>
-      <Image
-        src={IMAGES.layoutBg}
-        alt="Background"
-        className={`${isHidden ? "hidden" : ""} 
-          -top-18 -left-20 
-          md:top-0 md:left-0 
-          w-[286px] md:w-[356px] 
-          animate-wiggleSpin10s 
-          origin-top-left object-cover 
-          z-0 fixed`}
-      />
+    <div className={isHidden ? "hidden" : ""}>
+     
+
+ <Image
+            src={IMAGES.logo}
+            alt="Logo"
+            className="md:w-[100px] w-[69px] fixed top-5 left-5 z-10 "
+          />
+
+
+          <div className="fixed -top-10 -left-10">
+<div class="relative animate-spin w-40 h-40 rounded-full bg-gradient-to-tr from-yellow-400 to-orange-700 animate-spin-slow">
+  <div class="absolute inset-4 bg-black rounded-full"></div>
+</div>
+</div>
+
+
+
     </div>
   );
 }

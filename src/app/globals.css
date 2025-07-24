@@ -262,3 +262,7 @@
 .float-up-down {
   animation: floatUpDown 3s ease-in-out infinite;
 }
+
+ .animate-spin-slow {
+    animation: spin 5s linear infinite;
+  }

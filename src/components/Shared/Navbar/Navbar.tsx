@@ -1,27 +1,12 @@
-"use client";
 
 import { ICONS, IMAGES } from "@/assets";
 import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+
 import clsx from "clsx";
 
 const Navbar = () => {
-const [isHidden, setIsHidden] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 1600) {
-        setIsHidden(true); // hide after 200px
-      } else {
-        setIsHidden(false); // show again if scrolled up
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <div
@@ -30,12 +15,8 @@ const [isHidden, setIsHidden] = useState(false);
       )}
     >
       <Container>
-        <div className={`flex justify-between items-center py-5 ${isHidden ? "hidden" : "" }`}>
-          <Image
-            src={IMAGES.logo}
-            alt="Logo"
-            className="md:w-[100px] w-[69px] fixed top-5 left-4 z-0 "
-          />
+        <div className={`flex justify-between items-center py-5 `}>
+      
           <div
             className="md:w-[100px] w-[69px]"
           />

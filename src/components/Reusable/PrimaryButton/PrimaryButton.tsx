@@ -35,7 +35,7 @@ const PrimaryButton: React.FC<GradientButtonProps> = ({
       <Image
         src={IMAGES.buttonDesign}
         alt=""
-        className="absolute animate-pulse top-0 right-0 h-full pointer-events-none"
+        className="absolute animate-spin-slow top-0 right-0 h-full pointer-events-none"
       />
 
       <button className="flex flex-row justify-center items-center gap-2 z-10 d">
