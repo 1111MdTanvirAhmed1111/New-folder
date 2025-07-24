@@ -1,7 +1,10 @@
 import { ICONS, IMAGES } from "@/assets";
 import Container from "@/components/Reusable/Container/Container";
+import { StaggeredFade } from "@/components/Reusable/Heading/StaggeredFade";
 import PrimaryButton from "@/components/Reusable/PrimaryButton/PrimaryButton";
 import Image from "next/image";
+import { BlurIn } from './../../Reusable/Container/BlurIn';
+import { TextFade } from './../../Reusable/Container/TextFade';
 
 const Hero = () => {
   return (
@@ -32,18 +35,23 @@ const Hero = () => {
           />
 
           <p className="text-xl text-white leading-[26px] font-semibold font-Jost mt-9">
-            Welcome To
+              <StaggeredFade text="Welcome To" />
           </p>
-          <Image
+        <BlurIn>
+            <Image
             src={IMAGES.logoName}
             alt="Global Crypto Alliance"
             className="z-10 mt-3 w-[253px]"
           />
+        </BlurIn>
+        
+        <TextFade  direction="down">
           <p className="mt-2 font-Inter text-sm md:text-lg text-center md:text-start font-medium leading-[22px] text-white text-shadow-2xs">
             Unique and Revolutionary Business Model of 21st Century
             SUSTAINABILITY-SCALABILITY TRANSPARENCY & SECURITY Limitless
             Opportunities.
           </p>
+          </TextFade>
           <div className="flex flex-col-reverse lg:flex-row gap-3 items-center md:items-baseline w-full mt-3">
             <PrimaryButton
               label="Watch Tutorial"

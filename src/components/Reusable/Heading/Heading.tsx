@@ -1,4 +1,7 @@
+import { WordsPullUp } from './WordsPullUp';
+
 interface ReusableHeadingProps {
+
   highlight: string;
   className?: string;
 }
@@ -18,7 +21,8 @@ const ReusableHeading: React.FC<ReusableHeadingProps> = ({
             "linear-gradient(90deg, #FF7800 51.71%, #FFE601 100%)",
         }}
       >
-        {highlight}
+       <WordsPullUp text='About Global Crypto Alliance' />
+        
       </span>{" "}
     </h2>
   );
