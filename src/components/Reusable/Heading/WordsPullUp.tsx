@@ -34,8 +34,8 @@ export function WordsPullUp({
           animate={isInView ? 'animate' : ''}
           custom={i}
           className={
-            'text-xl text-center sm:text-4xl font-bold tracking-tighter md:text-6xl md:leading-[4rem]',
-            'pr-2'}
+            'text-xl text-center sm:text-4xl font-bold tracking-tighter md:text-6xl md:leading-[4rem] pr-2'
+            }
         >
           {current == '' ? <span>&nbsp;</span> : current}
         </motion.div>
