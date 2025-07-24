@@ -148,7 +148,7 @@ const FutureRoadMap = () => {
       </div>
       <Container>
         <JoinUs />
-        <div className="backdrop-blur-[24px] h-[1200px] xl:h-[1500px] bg-gradient-future-roadmap border border-primary-15 rounded-2xl mt-7 xl:mt-24">
+        <div className="backdrop-blur-[24px] h-[1000px] xl:h-[1500px] bg-gradient-future-roadmap border border-primary-15 rounded-2xl mt-7 xl:mt-24">
           <div className="relative z-10 flex flex-col-reverse md:flex-row justify-between backdrop-blur-md rounded-2xl items-center w-full">
             <div className="flex flex-col w-full">
               <h1
@@ -210,7 +210,7 @@ const FutureRoadMap = () => {
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
-                <div className="grid grid-cols-2 gap-5 xl:hidden absolute top-[751px] left-5">
+                {/* <div className="grid grid-cols-2 gap-5 xl:hidden absolute top-[751px] left-5">
                   {cardRow6DetailsMobile?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
@@ -219,7 +219,7 @@ const FutureRoadMap = () => {
                   {cardRow7DetailsMobile?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
-                </div>
+                </div> */}
 
                 {/* For desktop */}
                 <div className="hidden xl:grid grid-cols-3 gap-[30px] absolute -top-11 left-20 2xl:left-[175px]">
