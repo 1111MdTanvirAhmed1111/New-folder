@@ -16,7 +16,7 @@ const FutureRoadMap = () => {
     },
     {
       sl: "03",
-      text: "GLOBAL  AUTOPOOL BONUS 2",
+      text: "GLOBAL AUTOPOOL BONUS 2",
     },
   ];
   const cardRow2Details = [
@@ -60,6 +60,14 @@ const FutureRoadMap = () => {
       sl: "12",
       text: "WEB 3.0 PROJECTS",
     },
+    {
+      sl: "13",
+      text: "METAVERSE INTEGRATION",
+    },
+    {
+      sl: "14",
+      text: "DECENTRALIZED FINANCE (DeFi)",
+    },
   ];
 
   const cardRow1DetailsMobile = [
@@ -75,7 +83,7 @@ const FutureRoadMap = () => {
   const cardRow2DetailsMobile = [
     {
       sl: "03",
-      text: "GLOBAL  AUTOPOOL BONUS 2",
+      text: "GLOBAL AUTOPOOL BONUS 2",
     },
     {
       sl: "04",
@@ -122,6 +130,17 @@ const FutureRoadMap = () => {
       text: "WEB 3.0 PROJECTS",
     },
   ];
+  const cardRow7DetailsMobile = [
+    {
+      sl: "13",
+      text: "METAVERSE INTEGRATION",
+    },
+    {
+      sl: "14",
+      text: "DECENTRALIZED FINANCE (DeFi)",
+    },
+  ];
+
   return (
     <div className="relative mt-7 xl:mt-[100px]">
       <div className="absolute top-[700px] xl:top-[500px] -left-10 xl:-left-40 size-[171px] xl:size-[542px] rounded-full bg-gradient-to-r from-[#FF7800] to-[#FFE601] p-7 xl:p-16 flex items-center justify-center">
@@ -129,7 +148,7 @@ const FutureRoadMap = () => {
       </div>
       <Container>
         <JoinUs />
-        <div className="backdrop-blur-[24px] h-[1000px] xl:h-[1500px] bg-gradient-future-roadmap border border-primary-15 rounded-2xl mt-7 xl:mt-24">
+        <div className="backdrop-blur-[24px] h-[1200px] xl:h-[1500px] bg-gradient-future-roadmap border border-primary-15 rounded-2xl mt-7 xl:mt-24">
           <div className="relative z-10 flex flex-col-reverse md:flex-row justify-between backdrop-blur-md rounded-2xl items-center w-full">
             <div className="flex flex-col w-full">
               <h1
@@ -148,7 +167,6 @@ const FutureRoadMap = () => {
                 <div className="hidden xl:block">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    // width="1093"
                     height="934"
                     viewBox="0 0 1093 934"
                     fill="none"
@@ -182,18 +200,23 @@ const FutureRoadMap = () => {
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
-                <div className="grid grid-cols-2 gap-5 xl:hidden absolute bottom-[200px] left-5">
+                <div className="grid grid-cols-2 gap-5 xl:hidden absolute top-[459px] left-5">
                   {cardRow4DetailsMobile?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
-                <div className="grid grid-cols-2 gap-5 xl:hidden absolute bottom-[54px] left-5">
+                <div className="grid grid-cols-2 gap-5 xl:hidden absolute top-[605px] left-5">
                   {cardRow5DetailsMobile?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
-                <div className="grid grid-cols-2 gap-5 xl:hidden absolute -bottom-[92px] left-5">
+                <div className="grid grid-cols-2 gap-5 xl:hidden absolute top-[751px] left-5">
                   {cardRow6DetailsMobile?.map((item) => (
+                    <RoadMapCard key={item?.sl} item={item} />
+                  ))}
+                </div>
+                <div className="grid grid-cols-2 gap-5 xl:hidden absolute top-[897px] left-5">
+                  {cardRow7DetailsMobile?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
