@@ -83,7 +83,7 @@ const UserActivity = () => {
             User Activity
           </h1>
 
-          <div className="w-full max-w-[1000px] mx-auto mt-10 scale-[0.9] -translate-x-3">
+          <div className="w-full max-w-[1000px] mx-auto mt-10 scale-[0.86] -translate-x-3">
             {/* Table Header */}
             <div className="grid grid-cols-5 gap-4 text-xs md:text-lg text-neutral-40 mb-7 font-medium w-full">
               <span className="text-center">User ID</span>

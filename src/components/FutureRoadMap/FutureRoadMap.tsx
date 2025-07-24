@@ -80,21 +80,7 @@ const FutureRoadMap = () => {
               </h1>
 
               <div className="relative w-full mt-10 xl:mt-28">
-                <div className="hidden xl:block">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1000"
-                    viewBox="0 0 1093 1000"
-                    fill="none"
-                    className="w-full"
-                  >
-                    <path
-                      d="M0 0.600098H1092.5V311.6H2.5V622.6H1092.5V999.407H0"
-                      stroke="#FF7800"
-                      stroke-dasharray="5 5"
-                    />
-                  </svg>
-                </div>
+              
 
                 <div className="block xl:hidden ml-1">
                   <Image src={IMAGES.lineBg} alt="" className="" />
