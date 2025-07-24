@@ -8,7 +8,7 @@ import MonthlyTopEarners from "@/components/HomePage/MonthlyTopEarners/MonthlyTo
 import AlltimeTopEarners from "@/components/HomePage/AlltimeTopEarners/AlltimeTopEarners";
 import NeedHelp from "@/components/HomePage/NeedHelp/NeedHelp";
 import UserActivity from "@/components/HomePage/UserActivity/UserActivity";
-
+  
 export default function Home() {
   return (
     <div>

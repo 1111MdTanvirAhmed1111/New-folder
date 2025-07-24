@@ -11,7 +11,7 @@ const AllTimeLeaderBoard = () => {
       { position: 4, name: "Jane Doe", id: "481045", avatar: IMAGES.user, profit: "$890" },
       { position: 5, name: "Marco Jens", id: "481029", avatar: IMAGES.user, profit: "$942" },
     ];
-     const mobileData = leaderboardData.slice(0, 4); // Only first 4 rows
+     const mobileData = leaderboardData.slice(0, 5); // Only first 4 rows
     return (
         <>
       {/* Mobile (< md) */}

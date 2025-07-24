@@ -9,7 +9,7 @@ const ReusableHeading: React.FC<ReusableHeadingProps> = ({
 }) => {
   return (
     <h2
-      className={`text-xl md:text-[40px] text-center md:text-start font-bold text-white ${className}`}
+      className={`text-xl mt-3 md:text-[40px] text-center md:text-start font-bold text-white ${className}`}
     >
       <span
         className="text-transparent bg-clip-text gradient-text"

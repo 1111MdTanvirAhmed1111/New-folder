@@ -264,5 +264,14 @@
 }
 
  .animate-spin-slow {
-    animation: spin 5s linear infinite;
+    animation: spin 12s linear infinite;
   }
+
+  .gradient-border-circle {
+  border-width: 10px;
+  border-color: transparent;
+  background-image: conic-gradient(from 0deg, #facc15, #c2410c); /* yellow to orange */
+  background-clip: border-box;
+  border-radius: 9999px;
+  animation: spin 8s linear infinite;
+}
