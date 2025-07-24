@@ -40,8 +40,8 @@ function TopLeftImage() {
 
 
           <div className="fixed -top-10 -left-10">
-<div class="relative animate-spin w-40 h-40 rounded-full bg-gradient-to-tr from-yellow-400 to-orange-700 animate-spin-slow">
-  <div class="absolute inset-4 bg-black rounded-full"></div>
+<div class="relative animate-spin w-44 h-44 rounded-full bg-gradient-to-tr from-yellow-400 to-orange-700 animate-spin-slow">
+  <div class="absolute inset-5 bg-black rounded-full"></div>
 </div>
 </div>
 
