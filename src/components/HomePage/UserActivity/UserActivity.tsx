@@ -83,7 +83,7 @@ const UserActivity = () => {
             User Activity
           </h1>
 
-          <div className="w-full max-w-[1000px] mx-auto mt-10 scale-[0.84] -translate-x-3">
+          <div className="w-full max-w-[1000px] mx-auto mt-10 scale-[0.9] -translate-x-3">
             {/* Table Header */}
             <div className="grid grid-cols-5 gap-4 text-xs md:text-lg text-neutral-40 mb-7 font-medium w-full">
               <span className="text-center">User ID</span>
@@ -107,7 +107,7 @@ const UserActivity = () => {
                         ? "bg-neutral-55 text-neutral-10"
                         : "bg-primary-10 text-white"
                     }`}
-                    style={{ minWidth: "80px" }}
+                    style={{ minWidth: "50px" }}
                   >
                     {user?.isNew && (
                       <div className="bg-[#2AB500] rounded-[25px] px-2 py-[1px] text-white text-[10px] text-center absolute -top-[10px] left-0 right-0 mx-auto w-fit">
