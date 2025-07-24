@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-Jost: "Jost" , sans-serif;
+  --font-Inter: "Inter" , sans-serif;
+  --font-Rethink: "Rethink Sans", sans-serif;
+
+  /* Colors */
+
+  /* Primary */
+
+
+  --color-primary-10: #FF7800;
+  --color-primary-15: #FE7801;
+
+
+  /* secondary */
+  --color-secondary-10: #0D0D0D;
+  --color-secondary-20: #1A1A1A;
+  --color-secondary-30: #272727;
+
+  /* neutral */
+
+
+   --color-neutral-10: #1A1A1A;
+   --color-neutral-20: #898989;
+   --color-neutral-30: #4E4E4E;
+   --color-neutral-40: #6A6E71;
+   --color-neutral-45 : #232425;
+   --color-neutral-50 : #242526;
+   --color-neutral-55 : #2E2E2E;
+
+
+
+  /* Shadows */
+   --shadow-footer: 0px -2px 14px 0px rgba(0, 0, 0, 0.20);
+
+  /* Gradients */
+  --bg-gradient-primary: linear-gradient(90deg, rgba(255, 120, 0, 0.10) 19.52%, rgba(255, 230, 1, 0.10) 137.52%);
+
+  --bg-project-bg-gradient: linear-gradient(
+    180deg,
+    #020817 0%,
+    rgba(2, 8, 23, 0) 100%
+  );
+  --bg-gradient-future-roadmap: linear-gradient(278deg, rgba(0, 0, 0, 0.17) 0%, rgba(0, 0, 0, 0.06) 100%);
+ --bg-project-bg-gradient: linear-gradient(180deg, #0D0D0D 0%, #1A1A1A 67.26%);
+  --bg-text-bg-gradient:linear-gradient(90deg, #FF7800 46.93%, #FFE601 100%);
+  --bg-border-bg-gradient:linear-gradient(90deg, #FF7800 100%, #FFE601 100%);
+  --bg-gradient-button:linear-gradient(90deg, #FF7800 0%, #FFE601 100%);
+  --bg-gradient-hero-circle:linear-gradient(180deg, rgba(255, 230, 1, 0.50) 0%, rgba(255, 120, 0, 0.50) 73.56%);
+
+  
+}
+
+.bg-gradient-future-roadmap {
+  background: var(--bg-gradient-future-roadmap);
+}
+
+.bg-gradient-primary {
+  background: var(--bg-gradient-primary);
+}
+
+.bg-text-bg-gradient {
+  background: var(--bg-text-bg-gradient);
+}
+.bg-project-bg-gradient {
+  background: var(--bg-project-bg-gradient);
+}
+.bg-border-bg-gradient {
+  background: var(--bg-border-bg-gradient);
+}
+.bg-gradient-button {
+  background: var(--bg-gradient-button);
+}
+.bg-gradient-hero-circle {
+  background: var(--bg-gradient-hero-circle);
+}
+/* custom scrollbar for a specific section */ 
+.custom-scrollbar {
+  overflow-y: auto;
+  max-height: 400px;
+  /* Adjust height as needed */
+}
+
+/* Scrollbar Track (non-scrolled area) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  /* Scrollbar width */
+}
+
+/* Scrollbar Thumb (scrolled area) */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #1d293d;
+  /* Dark blue scrollbar */
+  border-radius: 4px;
+}
+
+/* Scrollbar Track (background) */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #020618;
+  /* Dark background for non-scrolled area */
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-scroll-up {
+  animation: scroll-up linear infinite;
+}
+
+.animate-scroll-down {
+  animation: scroll-down linear infinite;
+}
+
+/* Only apply to divs with custom-scrollbar class */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 3px; /* for horizontal scrolling */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+/* Firefox support */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: gray transparent;
+}
+
+
+/* Swiper Pagination Dots Custom Styles */
+.swiper-pagination-bullet {
+  background-color: #888888 !important; /* Unselected: gray */
+  opacity: 1 !important;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px !important;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #06a0ed !important; /* Selected: blue */
+  width: 12px;
+  height: 12px;
+  transform: translateY(-2px);
+}
+
+/* 
+@keyframes gradient-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-border {
+  background-size: 200% 200%;
+  animation: gradient-border 3s ease infinite;
+} */
+
+
+.gradient-text {
+  background: linear-gradient(90deg, #FF7800 0%, #FFE601 50%, #FF7800 100%);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 3s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* wiggleSpin Animation For Home Layout */
+
+@keyframes wiggleSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-wiggleSpin10s {
+  animation: wiggleSpin 10s ease-in-out infinite;
+}
+.animate-wiggleSpin5s {
+  animation: wiggleSpin 3s ease-in-out infinite;
+}
+
+
+/* Animation For Up and Down FLoating */
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-3px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(3px); }
+  100% { transform: translateY(0); }
+}
+
+.float-up-down {
+  animation: floatUpDown 7s ease-in-out infinite;
+}
